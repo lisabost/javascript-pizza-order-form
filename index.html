@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Order Form</title>
+    <!-- Bootstrap styles first -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Our styles -->
+    <link href="pizza.css" rel="stylesheet" type="text/css"/>
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body id="page">
+<header>
+    <h1>Pizza Time</h1>
+    <h3>Fresh Wood-Fired Pizza</h3>
+</header>
+<div class="container">
+    <nav>
+        <ul id="tabs" class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" id="homeTab" href="#home">Create Your Pizza</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contactTab" href="#contact">Enter Your Information</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="orderTab" href="#orderDetails">Order Details</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="tab-content">
+        <div id="home" class="tab-pane active">
+            <h2>Pizza Selections</h2>
+            <form id="pizzaDetails">
+
+                <fieldset>
+                    <legend>Pizza Size</legend>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="size" id="small" data-size="small"
+                               data-price="7" checked="checked">
+                        <label for="small" class="form-check-label">Small - $7</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="size" id="medium" data-size="medium"
+                               data-price="9">
+                        <label for="medium" class="form-check-label">Medium - $9</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="size" id="large" data-size="large"
+                               data-price="12">
+                        <label for="large" class="form-check-label">Large - $12</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Choose Your Crust</legend>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="crust" id="crust-thin" checked="checked"
+                               value="thin crust">
+                        <label for="crust-thin" class="form-check-label">Thin</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="crust" id="crust-pan" value="pan">
+                        <label for="crust-pan" class="form-check-label">Pan</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" name="crust" id="crust-gf" value="gluten-free">
+                        <label for="crust-gf" class="form-check-label">Gluten-Free</label>
+                    </div>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Choose Your Meats - $1.50 each</legend>
+
+                    <div class="row meatGroup">
+                        <div class="col">
+                            <input type="checkbox" name="meat" id="meat-sausage"
+                                   value="sausage">
+                            <label for="meat-sausage">Italian Sausage</label>
+                        </div>
+
+                        <div class="col">
+                            <input type="checkbox" name="meat" id="meat-pepperoni"
+                                   value="pepperoni">
+                            <label for="meat-pepperoni">Pepperoni</label>
+                        </div>
+
+                        <div class="col">
+                            <input type="checkbox" name="meat" id="meat-anchovies"
+                                   value="anchovies">
+                            <label for="meat-anchovies">Anchovies</label>
+                        </div>
+
+                    </div>
+                    <div class="row meatGroup">
+                        <div class="col">
+                            <input type="checkbox" name="meat" id="meat-chicken"
+                                   value="grilled chicken">
+                            <label for="meat-chicken">Grilled Chicken</label>
+                        </div>
+
+                        <div class="col">
+                            <input type="checkbox" name="meat" id="meat-meatball"
+                                   value="meatballs">
+                            <label for="meat-meatball">Meatballs</label>
+                        </div>
+
+                        <div class="col">
+                            <input type="checkbox" name="meat" id="meat-canadian"
+                                   value="canadian bacon">
+                            <label for="meat-canadian">Canadian Bacon</label>
+                        </div>
+                    </div>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Choose Your Non-meats - $1.00 each</legend>
+
+                    <div class="row vegGroup">
+                        <div class="col">
+                            <input type="checkbox" name="non-meat" id="non-meat-greenPeppers" value="green peppers">
+                            <label for="non-meat-greenPeppers">Green Peppers</label>
+                        </div>
+
+                        <div class="col">
+                            <input type="checkbox" name="non-meat" id="non-meat-pineapple" value="pineapple">
+                            <label for="non-meat-pineapple">Pineapple</label>
+                        </div>
+
+                        <div class="col">
+                            <input type="checkbox" name="non-meat" id="non-meat-bolives" value="black olives">
+                            <label for="non-meat-bolives">Black Olives</label>
+                        </div>
+
+                    </div>
+
+                    <div class="row vegGroup">
+                        <div class="col">
+                            <input type="checkbox" name="non-meat" id="non-meat-golives" value="green olives">
+                            <label for="non-meat-golives">Green Olives</label>
+                        </div>
+
+                        <div class="col">
+                            <input type="checkbox" name="non-meats" id="non-meat-jalapeno" value="jalapenos">
+                            <label for="non-meat-jalapeno">Jalapenos</label>
+                        </div>
+                        <div class="col">
+                            <input type="checkbox" name="non-meat" id="non-meat-mushrooms" value="mushrooms">
+                            <label for="non-meat-mushrooms">Mushrooms</label>
+                        </div>
+                    </div>
+
+                </fieldset>
+                <input type="submit" id="pizzaOrderButton" value="Order Pizza">
+            </form>
+
+        </div>
+
+        <div id="contact" class="tab-pane">
+            <h2>Enter Your Delivery Information</h2>
+            <form id="deliveryInfo">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Full Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="streetAddress">Street Address</label>
+                    <input type="text" class="form-control" name="streetAddress" id="streetAddress"
+                           placeholder="Street Address">
+                </div>
+
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control" name="city" id="city" placeholder="City">
+                </div>
+
+                <div class="form-group">
+                    <label for="state">State</label>
+                    <input type="text" class="form-control" name="state" id="state" placeholder="State">
+                </div>
+
+                <div class="form-group">
+                    <label for="zip">Zip Code</label>
+                    <input type="text" class="form-control" name="zip" id="zip" placeholder="Zipcode">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" class="form-control" name="phone" id="phone" placeholder="XXX-XXX-XXXX">
+                </div>
+                <p>
+                    <input type="submit" id="sendDeliveryInfo" value="Submit Delivery Information">
+                </p>
+            </form>
+        </div>
+
+        <div id="orderDetails" class="tab-pane">
+            <h2>Order Details</h2>
+            <fieldset>
+                <legend>Pizza Details</legend>
+
+                <p>Pizza size: <span id="sizeDisplay"></span></p>
+
+                <p>Crust choice: <span id="crustDisplay"></span></p>
+
+                <p>Meat toppings: <span id="meatDisplay"></span></p>
+
+                <p>Non-meat toppings: <span id="non-meatDisplay"></span></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Delivery Information</legend>
+
+                <p>Name: <span id="nameInfoDisplay"></span></p>
+
+                <p>Address: <span id="contactInfoDisplay"></span></p>
+
+                <p>Phone Number: <span id="phoneNumberDisplay"></span></p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Order Total</legend>
+
+                <p>Subtotal: <span id="pizzaSubtotal"></span></p>
+
+                <p>Tax: <span id="tax"></span></p>
+
+                <p>Delivery Fee: <span id="deliveryFee"></span></p>
+
+                <p>Total Price: <span id="cost"></span></p>
+
+            </fieldset>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery first -->
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<!-- Popper and Bootstrap second -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Our code last -->
+<script src="pizza.js"></script>
+
+</body>
+<footer>
+    Copyright &copy; 2020 Pizza Time Pizza Co.<br>
+</footer>
+
+</html>

@@ -1,0 +1,57 @@
+body {
+    background-image: url("img/pizza2.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    font-weight: bold;
+    background-color: transparent;
+    margin: 0 0 25px 0;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+header h1 {
+    font-size: 5em;
+}
+
+.tab-pane {
+    padding: 10px;
+}
+
+nav li {
+    background-color: lightgrey;
+}
+#home {
+    background-color: beige;
+    opacity: 80%;
+}
+
+#contact {
+    background-color: beige;
+    opacity: 80%;
+}
+
+#orderDetails {
+    background-color: beige;
+    opacity: 80%;
+}
+
+#orderDetails p {
+    font-weight: bold;
+}
+
+#orderDetails p span {
+    font-weight: normal;
+}
+
+footer {
+    text-align: center;
+    font-size: 70%;
+    font-style: italic;
+    color: white;
+}

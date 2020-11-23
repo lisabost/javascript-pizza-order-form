@@ -1,8 +1,8 @@
 body {
     background-image: url("img/pizza2.jpg");
     background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-size: cover;
 }
 
@@ -41,17 +41,17 @@ nav li {
     opacity: 80%;
 }
 
-#orderDetails p {
-    font-weight: bold;
-}
+/*#orderDetails p {*/
+/*    font-weight: bold;*/
+/*}*/
 
-#orderDetails p span {
-    font-weight: normal;
-}
+/*#orderDetails p span {*/
+/*    font-weight: normal;*/
+/*}*/
 
-footer {
-    text-align: center;
-    font-size: 70%;
-    font-style: italic;
-    color: white;
-}
+/*footer {*/
+/*    text-align: center;*/
+/*    font-size: 70%;*/
+/*    font-style: italic;*/
+/*    color: white;*/
+/*}*/
